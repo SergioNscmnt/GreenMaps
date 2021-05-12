@@ -20,6 +20,21 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Models/tables
-db.customers = require("../models/Customer")(sequelize, Sequelize);
+db.Trash = require("../models/Trash")(sequelize, Sequelize);
+db.CollectPoint = require("../models/CollectPoint")(sequelize, Sequelize);
+db.Address = require("../models/Address")(sequelize, Sequelize);
+db.Person = require("../models/Person")(sequelize, Sequelize);
+db.User = require("../models/User")(sequelize, Sequelize);
+
+//Relationships
+db.CollectPoint.belongsToMany(db.Trash, {
+  through: "CollectPoint_Trash",
+});
+db.Trash.belongsToMany(db.CollectPoint, {
+  through: "CollectPoint_Trash",
+});
+
+db.Address.hasMany(db.Person, { foreignKey: { allowNull: false } });
+db.User.belongsTo(db.Person, { foreignKey: { allowNull: false } });
 
 module.exports = db;

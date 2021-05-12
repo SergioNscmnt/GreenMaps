@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const indexRoute = require("./routes/customer.routes");
 const db = require("./config/db.config");
 const customerRoute = require("./routes/customer.routes");
 

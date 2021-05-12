@@ -4,6 +4,7 @@
   "description": "Backend para o aplicativo Green Maps, para mapemanto de coleta de lixo",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
     "express": "^4.17.1",
     "mariadb": "^2.5.3",
     "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
