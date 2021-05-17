@@ -1,7 +1,7 @@
 // Configuração de ambiente
 
 const env = {
-  database: "greenmaps",
+  database: "ecomap",
   username: "root",
   password: "admin",
   host: "localhost",
