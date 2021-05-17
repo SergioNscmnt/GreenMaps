@@ -2,7 +2,7 @@
 ## Um app que ajuda a salvar o mundo.
 - Green Maps é um aplicativo construído em React Native no frontend e Node no backend.
 - Consiste em um mapemanto de lixeiras e pontos de coleta para incentivo do descarte do lixo consciente.
-- Foi desenvolvido para o projeto de extensão da faculdade Sapiens por alunos de Sistemas de Informação e Engenharia da Computação. Portanto, o projeto é público.
+- Foi desenvolvido para o projeto de extensão da faculdade Sapiens por alunos de Sistemas de Informação, Engenharia da Computação e Jogos Digitais. Portanto, o projeto é público.
 ## Backend
 - Para fazer o build da pasta backend siga os seguintes passos:
 
